@@ -12,8 +12,8 @@ function setCart(c) {
 function addToCart(item) {
  // write your code here
  var item = {
-   itemName: ,
-   itemPrice: ,
+   itemName: item,
+   itemPrice: 
  }
 }
 
