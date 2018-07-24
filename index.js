@@ -23,7 +23,7 @@ function viewCart() {
   if(cart.length > 0) {
     var cartList = [];
     for(var i=0; i<cart.length; i++) {
-      cartList.push(`${cart[i].itemName} at $${itemPrice}`);
+      cartList.push(`${cart[i].itemName} at $${cart[i].itemPrice}`);
     }
     return `In your cart, you have ${cartList}.`;
   }else{
