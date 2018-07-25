@@ -45,11 +45,21 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  
-    
+  if(cart.indexOf(item) > 0) {
+    cart.splice(cart.indexOf(item),1);
+    return cart;
+  }else{
+    return 'That item is ot in your cart.';
   }
 }
+    
 
 function placeOrder(cardNumber) {
   // write your code here
+  if(cardNumber){
+    total();
+    return `Your total cost is $${totalPrice}, which will be charged to the card ${cardNumber}.`;
+  }else{
+    return "Sorry, we don't have a credit card on file for you.";
+  }
 }
