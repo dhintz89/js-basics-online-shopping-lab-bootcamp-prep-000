@@ -49,7 +49,7 @@ function removeFromCart(item) {
     cart.splice(cart.indexOf(item),1);
     return cart;
   }else{
-    return 'That item is ot in your cart.';
+    return 'That item is not in your cart.';
   }
 }
     
