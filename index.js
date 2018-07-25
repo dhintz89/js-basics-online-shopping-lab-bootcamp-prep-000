@@ -45,12 +45,11 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  function checkName(item) {
-    for(var i=0; i<cart.length; i++) {
-      if(cart[i].itemName === item) {
-        cart.splice(cart[i],1);
-      }
+  for(var i=0; i<cart.length; i++) {
+    if(cart[i].itemName === item) {
+      cart.splice(cart[i],1);
     }
+  }
   }
   if(cart.findIndex(item) > 0) {
     cart.splice(cart.indexOf(item),1);
