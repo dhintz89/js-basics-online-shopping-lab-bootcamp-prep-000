@@ -52,19 +52,11 @@ function removeFromCart(item) {
     }
   }
   if(cart.length === startingVal) {
-    return "That item is not in your cart."
-    }else{
-      return cart;
-}
-
-  if(cart.findIndex(item) > 0) {
-    cart.splice(cart.indexOf(item),1);
-    return cart;
+    return "That item is not in your cart.";
   }else{
-    return 'That item is not in your cart.';
+    return cart;
   }
 }
-    
 
 function placeOrder(cardNumber) {
   // write your code here
