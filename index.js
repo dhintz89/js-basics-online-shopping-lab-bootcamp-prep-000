@@ -62,8 +62,9 @@ function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber){
     const message = `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    cart = [];
   }else{
     const message = "Sorry, we don't have a credit card on file for you.";
   }
-  
+  return message;
 }
