@@ -45,7 +45,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if(cart.indexOf(item) > 0) {
+  if(cart.findIndex(item) > 0) {
     cart.splice(cart.indexOf(item),1);
     return cart;
   }else{
