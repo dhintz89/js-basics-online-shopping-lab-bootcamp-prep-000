@@ -36,7 +36,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  var totalPrice;
+  var totalPrice = 0;
   for(var i=0; i<cart.lenth; i++) {
     totalPrice += parseInt(cart[i].itemPrice,10);
   }
